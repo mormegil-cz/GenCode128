@@ -1,29 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Authors>Chris Wuestefeld, Petr Kadlec</Authors>
-    <Company></Company>
-    <Description>Code128 barcode generator</Description>
-    <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
-    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <Product />
-    <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
-    <PackageReleaseNotes>Original version from Chris Wuestefeld was targeting .NET 2.0.
-Code improvements added by Nikolay.IT.
-Ported to .NET Standard by Petr Kadlec</PackageReleaseNotes>
-    <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
-    <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Authors>Chris Wuestefeld, Petr Kadlec, Jan Záruba</Authors>    
+        <Company></Company>
+        <Description>Code128 barcode generator</Description>
+        <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <Product />
+        <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
+        <PackageReleaseNotes>
+            Original version from Chris Wuestefeld was targeting .NET 2.0. https://www.codeproject.com/Articles/14409/GenCode128-A-Code128-Barcode-Generator
+            Code improvements added by Nikolay.IT. https://github.com/SourceCodeBackup/GenCode128
+            Ported to .NET Standard by Petr Kadlec https://github.com/mormegil-cz/GenCode128
+            Update to .NET 6 by Jan Záruba https://github.com/jan-zaruba-ententee/GenCode128/
+        </PackageReleaseNotes>
+        <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
+        <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GenCode128\GenCode128.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\GenCode128\GenCode128.csproj" />
+    </ItemGroup>
 
 </Project>

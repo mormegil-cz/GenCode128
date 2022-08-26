@@ -4,7 +4,7 @@ namespace GenCode128
     using SixLabors.ImageSharp;
     using SixLabors.ImageSharp.PixelFormats;
     using SixLabors.ImageSharp.Processing;
-    using CoreRectangle = SixLabors.Primitives.Rectangle;
+    using SixLabors.ImageSharp.Drawing.Processing;
 
     /// <summary>
     /// Summary description for Code128Rendering.
@@ -154,8 +154,9 @@ namespace GenCode128
             Image<Rgba32> myImage = new Image<Rgba32>(width, height);
             ((Image)myImage).Mutate(ctx =>
             {
+
                 // set to white so we don't have to fill the spaces with white
-                ctx.Fill(Rgba32.White, new CoreRectangle(0, 0, width, height));
+                ctx.Fill(Color.White, new Rectangle(0, 0, width, height));
 
                 // skip quiet zone
                 var cursor = addQuietZone ? CQuietWidth * barWeight : 0;
@@ -171,7 +172,7 @@ namespace GenCode128
                         // if width is zero, don't try to draw it
                         if (barWidth > 0)
                         {
-                            ctx.Fill(Rgba32.Black, new CoreRectangle(cursor, 0, barWidth, height));
+                            ctx.Fill(Color.Black, new Rectangle(cursor, 0, barWidth, height));
                         }
 
                         // note that we never need to draw the space, since we 

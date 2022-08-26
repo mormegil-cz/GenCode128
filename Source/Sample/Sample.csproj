@@ -1,25 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <PackageId>GenCode128Sample</PackageId>
-    <Product>GenCode128Sample</Product>
-    <Description>Code128 barcode generator</Description>
-    <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
-    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
-    <PackageReleaseNotes>Original version from Chris Wuestefeld was targeting .NET 2.0.
-Code improvements added by Nikolay.IT.
-Ported to .NET Standard by Petr Kadlec</PackageReleaseNotes>
-    <Authors>Chris Wuestefeld, Petr Kadlec</Authors>
-    <Company></Company>
-    <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
-    <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GenCode128\GenCode128.csproj" />
-  </ItemGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <PackageId>GenCode128Sample</PackageId>
+        <Product>GenCode128Sample</Product>
+        <Description>Code128 barcode generator</Description>
+        <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
+        <PackageReleaseNotes>
+            Original version from Chris Wuestefeld was targeting .NET 2.0. https://www.codeproject.com/Articles/14409/GenCode128-A-Code128-Barcode-Generator
+            Code improvements added by Nikolay.IT. https://github.com/SourceCodeBackup/GenCode128
+            Ported to .NET Standard by Petr Kadlec https://github.com/mormegil-cz/GenCode128
+            Update to .NET 6 by Jan Záruba https://github.com/jan-zaruba-ententee/GenCode128/
+        </PackageReleaseNotes>
+        <Authors>Chris Wuestefeld, Petr Kadlec, Jan Záruba</Authors>
+        <Company></Company>
+        <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
+        <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\GenCode128\GenCode128.csproj" />
+    </ItemGroup>
 </Project>

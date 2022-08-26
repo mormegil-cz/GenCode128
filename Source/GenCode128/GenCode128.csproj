@@ -1,25 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <Authors>Chris Wuestefeld, Petr Kadlec</Authors>
-    <Company />
-    <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
-    <Description>Code128 barcode generator</Description>
-    <PackageReleaseNotes>Original version from Chris Wuestefeld was targeting .NET 2.0.
-Code improvements added by Nikolay.IT.
-Ported to .NET Standard by Petr Kadlec</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
-    <PackageId>GenCode128Core</PackageId>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>GenCode128Core</Product>
-    <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
-    <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
-    <LangVersion>default</LangVersion>
-    <PackageVersion>2.0.0-beta0007</PackageVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
-    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0007" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>Chris Wuestefeld, Petr Kadlec, Jan Záruba</Authors>
+        <Company />
+        <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
+        <Description>Code128 barcode generator</Description>
+        <PackageReleaseNotes>
+            Original version from Chris Wuestefeld was targeting .NET 2.0. https://www.codeproject.com/Articles/14409/GenCode128-A-Code128-Barcode-Generator
+            Code improvements added by Nikolay.IT. https://github.com/SourceCodeBackup/GenCode128
+            Ported to .NET Standard by Petr Kadlec https://github.com/mormegil-cz/GenCode128
+            Update to .NET 6 by Jan Záruba https://github.com/jan-zaruba-ententee/GenCode128/
+        </PackageReleaseNotes>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
+        <PackageId>GenCode128Core</PackageId>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Product>GenCode128Core</Product>
+        <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
+        <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
+        <LangVersion>default</LangVersion>
+        <PackageVersion>2.0.0-beta13</PackageVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta13" />
+    </ItemGroup>
 </Project>
