@@ -12,7 +12,7 @@ This is a simple library that lets you do one thing very easily: generate an ima
 
 ## Information about this .NET Standard port
 
-This is a port of the [GenCode128 .NET library](https://github.com/SourceCodeBackup/GenCode128) to .NET Standard. As .NET Standard (nor .NET Core) does not support System.Drawing, which is needed by the rendering part of the library, it uses the [ImageSharp library](http://imagesharp.net/). Note that currently, ImageSharp is in beta stage, so this package is marked as beta as well.
+This is a port of the [GenCode128 .NET library](https://github.com/SourceCodeBackup/GenCode128) to .NET Standard. As .NET Standard (nor .NET Core) does not support System.Drawing, which is needed by the rendering part of the library, it uses the [ImageSharp library](http://imagesharp.net/).
 
 The library has been originally developed by Chris Wuestefeld on CodeProject. Now, back to the original library description...
 

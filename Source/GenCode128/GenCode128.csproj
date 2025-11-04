@@ -6,10 +6,7 @@
         <Copyright>2006 Chris Wuestefeld, 2017 Petr Kadlec</Copyright>
         <Description>Code128 barcode generator</Description>
         <PackageReleaseNotes>
-            Original version from Chris Wuestefeld was targeting .NET 2.0. https://www.codeproject.com/Articles/14409/GenCode128-A-Code128-Barcode-Generator
-            Code improvements added by Nikolay.IT. https://github.com/SourceCodeBackup/GenCode128
-            Ported to .NET Standard by Petr Kadlec https://github.com/mormegil-cz/GenCode128
-            Update to .NET 6 by Jan Záruba https://github.com/jan-zaruba-ententee/GenCode128/
+            Updated to use ImageSharp version 2.1.12
         </PackageReleaseNotes>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/mormegil-cz/GenCode128</RepositoryUrl>
@@ -19,10 +16,15 @@
         <PackageTags>Barcode, GenCode128, GenCode128Core, Code128, generate barcode</PackageTags>
         <PackageProjectUrl>https://github.com/mormegil-cz/GenCode128</PackageProjectUrl>
         <LangVersion>default</LangVersion>
-        <PackageVersion>2.0.0-beta13</PackageVersion>
+        <PackageVersion>2.0.0</PackageVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
-        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta13" />
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\..\Images\GenCode128.png" Pack="true" PackagePath="\Images"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="SixLabors.ImageSharp" Version="2.1.12" />
+        <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0" />
     </ItemGroup>
 </Project>
